@@ -29,6 +29,7 @@
         "avoidEscape": true
       }
     ],
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "react/no-unescaped-entities": "off"
   }
 }

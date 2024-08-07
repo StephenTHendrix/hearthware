@@ -1,0 +1,7 @@
+export const brandWhite = '#D1CDC4'
+export const brandGreen = '#61603C'
+export const brandYellow = '#C2803A'
+export const brandRed = '#7A402E'
+// export const dulllOrange = '#A65328'
+export const brandOrange = '#BF5D30'
+export const brandBlue = '#2F4D49'
