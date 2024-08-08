@@ -35,4 +35,5 @@ const StyledBody = styled('body', {
   backgroundColor: brandBlue,
   color: brandWhite,
   margin: 0,
+  minHeight: '100vh',
 })

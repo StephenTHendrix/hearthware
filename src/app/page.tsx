@@ -1,32 +1,56 @@
 import { styled } from 'restyle'
-import { brandRed } from './constants/styles'
+import { ExperienceSection } from './components/ExperienceSection'
+import { experienceData, projectData } from './data'
+import { ProjectSection } from './components/ProjectSection'
 
 export default function Page() {
   return (
     <PageContainer>
-      <IntroSection>
+      <StickyColumn>
         <IntroTitle>Hi! I'm Stephen.</IntroTitle>
         <IntroDescription>
           I make Hearthware — a term for software crafted by a close-knit, collaborative team, designed to serve
-          communities, improve lives, and make room at the table for everyone.
+          communities, improve lives, and make room at the table for all.
         </IntroDescription>
-      </IntroSection>
-      <Section />
+      </StickyColumn>
+      <Column>
+        <IntroDescription>
+          I began my career in education while still in college, tutoring for both Breakthrough Collaborative and the
+          Simon Scholars Foundation, helping underserved middle and high school students in Santa Fe become the first
+          college graduates in their families. I followed this path for five more years, eventually becoming a certified
+          teacher in Dallas ISD and collecting a few fridge door's worth of student notes and letters along the way.
+          <br />
+          <br />
+          Since then, I've spent the last 5 years working my way toward becoming a senior software engineer, doing
+          everything from being the sole developer at a startup to leading cross-functional team efforts at iHeartMedia
+          and VShift.
+        </IntroDescription>
+
+        <ExperienceSection experienceData={experienceData} />
+        <ProjectSection projectData={projectData} />
+      </Column>
     </PageContainer>
   )
 }
 
 const PageContainer = styled('div', {
-  fontFamily: 'Inter, sans-serif',
-  lineHeight: '1.6',
+  display: 'flex',
+  padding: '40px',
+  gap: '20px',
 })
 
-const IntroSection = styled('section', {
+const Column = styled('div', {
+  flex: '1 1',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'flex-start',
-  padding: '0 20px',
+  gap: '20px',
+})
+
+const StickyColumn = styled(Column, {
+  position: 'sticky',
+  top: '0',
+  alignSelf: 'flex-start',
+  height: 'fit-content',
 })
 
 const IntroTitle = styled('h1', {
@@ -38,9 +62,4 @@ const IntroTitle = styled('h1', {
 const IntroDescription = styled('p', {
   maxWidth: '600px',
   fontSize: '18px',
-})
-
-const Section = styled('section', {
-  height: '100px',
-  backgroundColor: brandRed,
 })
