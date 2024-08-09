@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { styled } from 'restyle'
 import { brandBlue, brandWhite } from './constants/styles'
-import { Header } from './components/Header'
 
 import { Poppins } from 'next/font/google'
 
@@ -22,14 +21,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <StyledBody className={poppins.className}>
-        <Header />
-        {children}
-      </StyledBody>
-    </html>
+    <StyledHTML lang='en'>
+      <StyledBody className={poppins.className}>{children}</StyledBody>
+    </StyledHTML>
   )
 }
+
+const StyledHTML = styled('html', {
+  scrollBehavior: 'smooth',
+})
 
 const StyledBody = styled('body', {
   backgroundColor: brandBlue,
