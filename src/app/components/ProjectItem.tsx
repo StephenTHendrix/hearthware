@@ -1,8 +1,8 @@
 import { styled } from 'restyle'
-import { Project } from '../interfaces'
 import { FC } from 'react'
 import Image from 'next/image'
-import { brandGreen, brandOrange, brandWhite, brandYellow } from '../constants/styles'
+import { Project } from '../interfaces'
+import { brandWhite } from '../constants/styles'
 
 export const ProjectItem: FC<Props> = ({ project }) => (
   <ProjectListItem>
@@ -18,6 +18,14 @@ const ProjectListItem = styled('li', {
   display: 'flex',
   gap: '20px',
   marginBottom: '20px',
+  padding: '20px',
+  borderRadius: '8px',
+  transition: 'background-color 0.3s ease, transform 0.2s ease',
+  cursor: 'default',
+
+  '&:hover': {
+    backgroundColor: '#f5f5f51a',
+  },
 })
 
 const ProjectImage = styled(Image, {

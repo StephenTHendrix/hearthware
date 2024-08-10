@@ -17,6 +17,14 @@ export const ExperienceItem: FC<Props> = ({ job }) => {
 
 const ExperienceListItem = styled('li', {
   marginBottom: '20px',
+  padding: '20px',
+  borderRadius: '8px',
+  transition: 'background-color 0.3s ease, transform 0.2s ease',
+  cursor: 'default',
+
+  '&:hover': {
+    backgroundColor: '#f5f5f51a',
+  },
 })
 
 const JobHeader = styled('div', {
