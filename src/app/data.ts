@@ -52,7 +52,7 @@ export const projectData = [
       maximize their impact.`,
   },
   {
-    title: 'BillBoard',
+    title: 'BillBoard.com',
     image: '/blocks.svg',
     description: `A website that consolidates congress members' voting records, making their legislative history transparent and
       easily accessible to the public. The site helps users understand their representatives’ positions and track their
