@@ -3,12 +3,14 @@
 import { styled } from 'restyle'
 import { useState, useEffect, useRef } from 'react'
 import { ExperienceSection } from './components/ExperienceSection'
-import { experienceData, projectData } from './data'
+import { experienceData, gitHubUrl, linkedInUrl, projectData } from './data'
 import { ProjectSection } from './components/ProjectSection'
 import { brandWhite } from './constants/styles'
 import Image from 'next/image'
-import { useIntersectionObserver } from './hooks/useIntersectionObserver'
 import Link from 'next/link'
+import { useIntersectionObserver } from './hooks/useIntersectionObserver'
+import { LinkedIn } from './svg/LinkedIn'
+import { GitHub } from './svg/GitHub'
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState('')
@@ -32,79 +34,80 @@ export default function Page() {
   }, [aboutInView, experienceInView, projectsInView])
 
   return (
-    <PageContainer>
+    <>
       <StyledImage src='logo-dark.svg' alt='logo' height='80' width='80' />
-      <StickyColumn>
-        <IntroTitle>Hi! I'm Stephen.</IntroTitle>
-        <IntroDescription>
-          I make Hearthware — a term for software crafted by a close-knit, collaborative team, designed to serve
-          communities, improve lives, and make room at the table for all.
-        </IntroDescription>
+      <PageContainer>
+        <StickyColumn>
+          <IntroTitle>Hi! I'm Stephen.</IntroTitle>
+          <IntroDescription>
+            I want to make Hearthware - a term for software crafted by a close-knit, collaborative team designed to
+            promote social progress, improve lives, and make room at the table for underserved populations.
+          </IntroDescription>
 
-        <Nav>
-          <NavItem href='#about' className={activeSection === 'about' ? 'active' : ''}>
-            About
-          </NavItem>
-          <NavItem href='#experience' className={activeSection === 'experience' ? 'active' : ''}>
-            Experience
-          </NavItem>
-          <NavItem href='#projects' className={activeSection === 'projects' ? 'active' : ''}>
-            Projects
-          </NavItem>
-        </Nav>
+          <Nav>
+            <NavItem href='#about' className={activeSection === 'about' ? 'active' : ''}>
+              About
+            </NavItem>
+            <NavItem href='#experience' className={activeSection === 'experience' ? 'active' : ''}>
+              Experience
+            </NavItem>
+            <NavItem href='#projects' className={activeSection === 'projects' ? 'active' : ''}>
+              Projects
+            </NavItem>
+          </Nav>
 
-        {/* <SocialIcons>
-          <SocialIcon href='https://github.com/yourusername' target='_blank'>
-            GitHub
-          </SocialIcon>
-          <SocialIcon href='https://linkedin.com/in/yourusername' target='_blank'>
-            LinkedIn
-          </SocialIcon>
-        </SocialIcons> */}
-      </StickyColumn>
-      <Column>
-        <div ref={aboutRef}>
-          <Section id='about'>
-            <IntroDescription>
-              I began my career in education while still in college, tutoring for both Breakthrough Collaborative and
-              the Simon Scholars Foundation, helping underserved middle and high school students in Santa Fe become the
-              first college graduates in their families. I followed this path for five more years, eventually becoming a
-              certified teacher in Dallas ISD and collecting a few fridge door's worth of student notes and letters
-              along the way.
-              <br />
-              <br />
-              Since then, I've spent the last 5 years working my way toward becoming a senior software engineer, doing
-              everything from being the sole developer at a startup to leading cross-functional team efforts at
-              iHeartMedia and VShift.
-            </IntroDescription>
-          </Section>
-        </div>
+          <SocialIcons>
+            <SocialIcon href={linkedInUrl}>
+              <LinkedIn />
+            </SocialIcon>
+            <SocialIcon href={gitHubUrl}>
+              <GitHub />
+            </SocialIcon>
+          </SocialIcons>
+        </StickyColumn>
+        <Column>
+          <div ref={aboutRef}>
+            <Section id='about'>
+              <IntroDescription>
+                I made Hearthware.org to serve as an aspirational portfolio - I don’t have working side projects to
+                demo, but I do have five years of experience as a software engineer, seven years of experience as an
+                educator, and a deep desire to work hard on projects I believe in.
+                <br />
+                <br />
+                I’ve worked as the sole developer at a successful startup, an SME of high-level enterprise features and
+                mentor to junior developers at iHeartMedia, and a senior engineer at the agency VShift, working
+                cross-functionally with design and product teams to build custom greenfield solutions for our Fortune
+                100 clients. I find it deeply satisfying to understand the entirety of a feature or application that
+                traverses the full stack, including TypeScript, Next, React, GraphQL, Node, PostgreSQL, and AWS.
+              </IntroDescription>
+            </Section>
+          </div>
 
-        <div ref={experienceRef}>
-          <Section id='experience'>
-            <ExperienceSection experienceData={experienceData} />
-          </Section>
-        </div>
+          <div ref={experienceRef}>
+            <Section id='experience'>
+              <ExperienceSection experienceData={experienceData} />
+            </Section>
+          </div>
 
-        <div ref={projectsRef}>
-          <Section id='projects'>
-            <ProjectSection projectData={projectData} />
-          </Section>
-        </div>
-      </Column>
-    </PageContainer>
+          <div ref={projectsRef}>
+            <Section id='projects'>
+              <ProjectSection projectData={projectData} />
+            </Section>
+          </div>
+        </Column>
+      </PageContainer>
+    </>
   )
 }
 
 const PageContainer = styled('div', {
   display: 'flex',
   flexDirection: 'row',
-  padding: '60px 40px',
+  padding: '70px 40px',
   gap: '20px',
 
   '@media screen and (max-width: 1024px)': {
     flexDirection: 'column',
-    padding: '60px 40px',
   },
 })
 
@@ -123,7 +126,7 @@ const Column = styled('div', {
 
 const StickyColumn = styled(Column, {
   position: 'sticky',
-  top: '60px',
+  top: '70px',
   alignSelf: 'flex-start',
   height: 'fit-content',
 
@@ -175,30 +178,34 @@ const NavItem = styled(Link, {
 
   '&.active': {
     color: brandWhite,
-    textShadow: '0 0 10px rgba(255, 255, 255, 0.7)',
+    textShadow: '0 0 10px rgba(255, 255, 255, 0.3)',
   },
 
   '&:hover': {
     color: brandWhite,
-    textShadow: '0 0 10px rgba(255, 255, 255, 0.7)',
+    textShadow: '0 0 10px rgba(255, 255, 255, 0.3)',
   },
 })
 
-// const SocialIcons = styled('div', {
-//   marginTop: 'auto',
-//   display: 'flex',
-//   gap: '15px',
-// })
+const SocialIcons = styled('div', {
+  marginTop: 'auto',
+  display: 'flex',
+  gap: '15px',
+})
 
-// const SocialIcon = styled('a', {
-//   fontSize: '24px',
-//   color: '#888',
-//   textDecoration: 'none',
+const SocialIcon = styled(Link, {
+  textDecoration: 'none',
+  transition: 'fill 0.3s ease-in-out, filter 0.3s ease-in-out',
 
-//   '&:hover': {
-//     color: '#0073e6',
-//   },
-// })
+  '& svg': {
+    transition: 'fill 0.3s ease-in-out, filter 0.3s ease-in-out',
+  },
+
+  '&:hover svg': {
+    fill: brandWhite,
+    filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))',
+  },
+})
 
 const Section = styled('section', {
   marginBottom: '40px',
