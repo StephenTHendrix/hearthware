@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ExperienceSection } from './components/ExperienceSection'
 import { experienceData, gitHubUrl, linkedInUrl, projectData } from './data'
 import { ProjectSection } from './components/ProjectSection'
-import { brandWhite } from './constants/styles'
+import { brandRed, brandWhite } from './constants/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useIntersectionObserver } from './hooks/useIntersectionObserver'
@@ -66,33 +66,27 @@ export default function Page() {
           </SocialIcons>
         </StickyColumn>
         <Column>
-          <div ref={aboutRef}>
-            <Section id='about'>
-              <IntroDescription>
-                I made Hearthware.org to serve as an aspirational portfolio - I don’t have working side projects to
-                demo, but I do have five years of experience as a software engineer, seven years of experience as an
-                educator, and a deep desire to work hard on projects I believe in.
-                <br />
-                <br />
-                I’ve worked as the sole developer at a successful startup, an SME of high-level enterprise features and
-                mentor to junior developers at iHeartMedia, and a senior engineer at the agency VShift, working
-                cross-functionally with design and product teams to build custom greenfield solutions for our Fortune
-                100 clients. I find it deeply satisfying to understand the entirety of a feature or application that
-                traverses the full stack, including TypeScript, Next, React, GraphQL, Node, PostgreSQL, and AWS.
-              </IntroDescription>
-            </Section>
+          <div id='about' ref={aboutRef}>
+            <AboutTitle>About</AboutTitle>
+            <AboutSection>
+              I made Hearthware.org to serve as an aspirational portfolio - I don’t have working side projects to demo,
+              but I do have five years of experience as a software engineer, seven years of experience as an educator,
+              and a deep desire to work hard on projects I believe in.
+              <br />
+              <br />
+              I’ve worked as the sole developer at a successful startup, an SME of high-level enterprise features and
+              mentor to junior developers at iHeartMedia, and a senior engineer at the agency VShift, working
+              cross-functionally with design and product teams to build custom greenfield solutions for our Fortune 100
+              clients. I find it deeply satisfying to understand the entirety of a feature or application that traverses
+              the full stack, including TypeScript, Next, React, GraphQL, Node, PostgreSQL, and AWS.
+            </AboutSection>
+          </div>
+          <div id='experience' ref={experienceRef}>
+            <ExperienceSection experienceData={experienceData} />
           </div>
 
-          <div ref={experienceRef}>
-            <Section id='experience'>
-              <ExperienceSection experienceData={experienceData} />
-            </Section>
-          </div>
-
-          <div ref={projectsRef}>
-            <Section id='projects'>
-              <ProjectSection projectData={projectData} />
-            </Section>
+          <div id='projects' ref={projectsRef}>
+            <ProjectSection projectData={projectData} />
           </div>
         </Column>
       </PageContainer>
@@ -143,7 +137,7 @@ const IntroTitle = styled('h1', {
   margin: '0 0 10px 0',
 
   '@media screen and (max-width: 1024px)': {
-    fontSize: '36px',
+    fontSize: '32px',
   },
 })
 
@@ -207,6 +201,21 @@ const SocialIcon = styled(Link, {
   },
 })
 
-const Section = styled('section', {
-  marginBottom: '40px',
+const AboutTitle = styled('h2', {
+  fontSize: '32px',
+  fontWeight: '600',
+  margin: '20px 0',
+  borderBottom: `1px solid ${brandRed}`,
+
+  '@media screen and (min-width: 1024px)': {
+    display: 'none',
+  },
+})
+
+const AboutSection = styled('p', {
+  fontSize: '18px',
+
+  '@media screen and (max-width: 1024px)': {
+    fontSize: '16px',
+  },
 })

@@ -2,6 +2,7 @@ import { styled } from 'restyle'
 import { Project } from '../interfaces'
 import { ProjectItem } from './ProjectItem'
 import { FC } from 'react'
+import { brandRed } from '../constants/styles'
 
 export const ProjectSection: FC<Props> = ({ projectData }) => (
   <Section>
@@ -19,9 +20,10 @@ const Section = styled('section', {
 })
 
 const SectionTitle = styled('h2', {
-  fontSize: '36px',
+  fontSize: '32px',
   fontWeight: '600',
   margin: '20px 0',
+  borderBottom: `1px solid ${brandRed}`,
 })
 
 const ProjectList = styled('ul', {

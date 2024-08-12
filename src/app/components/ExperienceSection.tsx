@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { styled } from 'restyle'
 import { ExperienceItem } from './ExperienceItem'
 import { Experience } from '../interfaces'
+import { brandBlue, brandRed } from '../constants/styles'
 
 export const ExperienceSection: FC<Props> = ({ experienceData }) => (
   <Section>
@@ -19,9 +20,10 @@ const Section = styled('section', {
 })
 
 const SectionTitle = styled('h2', {
-  fontSize: '36px',
+  fontSize: '32px',
   fontWeight: '600',
   margin: '20px 0',
+  borderBottom: `1px solid ${brandRed}`,
 })
 
 const ExperienceList = styled('ul', {
