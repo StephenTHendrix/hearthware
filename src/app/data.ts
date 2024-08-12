@@ -17,6 +17,7 @@ export const experienceData = [
       using TypeScript, Next.js, React, GraphQL, and Node. Spearheaded AEM integration for Netlify Connect, improving
       integration options by 15% and streamlining content retrieval. Reduced page load times by 50% on a healthcare
       client’s website, significantly enhancing user experience.`,
+    skills: ['TypeScript', 'Next', 'React', 'Node', 'GraphQL', 'Drupal', 'Contentful', 'AEM'],
   },
   {
     title: 'Software Engineer',
@@ -25,6 +26,7 @@ export const experienceData = [
     description: `Led technical planning meetings, developed complex full-stack features, and mentored junior engineers. Migrated
       data models from DynamoDB to PostgreSQL and Redis, reducing query response times by 40%. Enhanced application
       performance by optimizing state management, reducing rendering time to 300 milliseconds.`,
+    skills: ['TypeScript', 'React', 'Node', 'GraphQL', 'PostgreSQL', 'Python', 'AWS'],
   },
   {
     title: 'Lead Software Engineer',
@@ -33,6 +35,7 @@ export const experienceData = [
     description: `Designed, architected, and launched the company web app from scratch using React, Redux, Node, Express, and
       MySQL. Cut customer support call time by 50% per customer post-deployment. Saved $10,000 by leveraging free public
       API calls and collaborated closely with the founder to iterate on features rapidly in a start-up environment.`,
+    skills: ['React', 'Node', 'Express', 'MySQL'],
   },
 ]
 

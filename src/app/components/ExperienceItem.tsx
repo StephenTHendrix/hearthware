@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { styled } from 'restyle'
 import { Experience } from '../interfaces'
+import { brandBlue, brandWhite } from '../constants/styles'
 
 export const ExperienceItem: FC<Props> = ({ job }) => {
   return (
@@ -11,6 +12,11 @@ export const ExperienceItem: FC<Props> = ({ job }) => {
       </JobHeader>
       <CompanyDetails>{job.company}</CompanyDetails>
       <JobDescription>{job.description}</JobDescription>
+      <PillsContainer>
+        {job.skills.map((skill, index) => (
+          <Pill key={index}>{skill}</Pill>
+        ))}
+      </PillsContainer>
     </ExperienceListItem>
   )
 }
@@ -56,6 +62,23 @@ const CompanyDetails = styled('p', {
 const JobDescription = styled('p', {
   fontSize: '16px',
   lineHeight: '1.6',
+})
+
+const PillsContainer = styled('div', {
+  display: 'flex',
+  flexWrap: 'wrap',
+  marginTop: '10px',
+})
+
+const Pill = styled('span', {
+  display: 'inline-block',
+  padding: '5px 10px',
+  margin: '5px 5px 0 0',
+  borderRadius: '20px',
+  backgroundColor: brandWhite,
+  color: brandBlue,
+  fontSize: '14px',
+  fontWeight: '500',
 })
 
 interface Props {
