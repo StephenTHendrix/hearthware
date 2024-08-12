@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ExperienceSection } from './components/ExperienceSection'
 import { experienceData, gitHubUrl, linkedInUrl, projectData } from './data'
 import { ProjectSection } from './components/ProjectSection'
-import { brandRed, brandWhite } from './constants/styles'
+import { brandGreen, brandOrange, brandRed, brandWhite, brandYellow } from './constants/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useIntersectionObserver } from './hooks/useIntersectionObserver'
@@ -40,8 +40,9 @@ export default function Page() {
         <StickyColumn>
           <IntroTitle>Hi! I'm Stephen.</IntroTitle>
           <IntroDescription>
-            I want to make Hearthware - a term for software crafted by a close-knit, collaborative team designed to
-            promote social progress, improve lives, and make room at the table for underserved populations.
+            I want to make <HearthwareText>Hearthware</HearthwareText> - a term for software crafted by a close-knit,
+            collaborative team designed to promote social progress, improve lives, and make room at the table for
+            underserved populations.
           </IntroDescription>
 
           <Nav>
@@ -139,6 +140,11 @@ const IntroTitle = styled('h1', {
   '@media screen and (max-width: 1024px)': {
     fontSize: '36px',
   },
+})
+
+const HearthwareText = styled('span', {
+  color: brandOrange,
+  fontWeight: 'bold',
 })
 
 const IntroDescription = styled('p', {
