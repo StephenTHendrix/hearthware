@@ -13,33 +13,41 @@ export const experienceData = [
     title: 'Senior Software Engineer',
     company: 'VShift',
     date: 'June 2023 - Present',
-    description: `Collaborate with Fortune 100 clients and internal teams to architect, design, and implement enterprise solutions
-      using TypeScript, Next.js, React, GraphQL, and Node. Spearheaded AEM integration for Netlify Connect, improving
-      integration options by 15% and streamlining content retrieval. Reduced page load times by 50% on a healthcare
-      client’s website, significantly enhancing user experience.`,
+    description: `Architect and develop web solutions, focusing on seamless integration with content 
+    management systems and headless platforms. Optimize website performance and collaborate with Fortune 
+    100 clients and cross-functional teams to deliver projects from concept to market.`,
     skills: ['TypeScript', 'Next', 'React', 'Node', 'GraphQL', 'Drupal', 'Contentful', 'AEM'],
   },
   {
     title: 'Software Engineer',
     company: 'iHeartMedia',
     date: 'February 2021 - June 2023',
-    description: `Led technical planning meetings, developed complex full-stack features, and mentored junior engineers. Migrated
-      data models from DynamoDB to PostgreSQL and Redis, reducing query response times by 40%. Enhanced application
-      performance by optimizing state management, reducing rendering time to 300 milliseconds.`,
+    description: `Lead technical planning and collaborate with teams to translate product requirements into 
+    engineering tasks. Build and maintain full-stack features, mentor junior engineers, and optimize database 
+    performance. Develop reusable components and implement state management to enhance application performance.`,
     skills: ['TypeScript', 'React', 'Node', 'GraphQL', 'PostgreSQL', 'Python', 'AWS'],
   },
   {
     title: 'Lead Software Engineer',
     company: 'Cake',
     date: 'March 2020 - March 2021',
-    description: `Designed, architected, and launched the company web app from scratch using React, Redux, Node, Express, and
-      MySQL. Cut customer support call time by 50% per customer post-deployment. Saved $10,000 by leveraging free public
-      API calls and collaborated closely with the founder to iterate on features rapidly in a start-up environment.`,
+    description: `Design and build full-stack web applications to improve user experience and operational efficiency, 
+    resulting in significant reductions in customer support time. Implement cost-effective solutions and work closely 
+    with leadership in a fast-paced startup environment to iterate on features and manage all aspects of development 
+    and deployment.`,
     skills: ['React', 'Node', 'Express', 'MySQL'],
   },
 ]
 
 export const projectData = [
+  {
+    title: 'Netlify Connect AEM Integration',
+    image: '/netlify-aem.jpeg',
+    description: `Integrate AEM content and experience fragments as a data source to unify all of your content sources
+    and make it easier to modernize your web architecture. The Adobe Experience Manager (AEM) Connector ensures that
+    AEM clients can “go composable” with options including migration to both Adobe and MACH native modern tech stacks.`,
+    url: 'https://www.netlify.com/integrations/adobeexperiencemanager',
+  },
   {
     title: 'LessonPlan.dev',
     image: '/blocks.svg',
