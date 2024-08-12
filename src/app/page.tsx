@@ -137,7 +137,7 @@ const IntroTitle = styled('h1', {
   margin: '0 0 10px 0',
 
   '@media screen and (max-width: 1024px)': {
-    fontSize: '32px',
+    fontSize: '36px',
   },
 })
 
@@ -207,7 +207,7 @@ const AboutTitle = styled('h2', {
   margin: '20px 0',
   borderBottom: `1px solid ${brandRed}`,
 
-  '@media screen and (min-width: 1024px)': {
+  '@media screen and (min-width: 1025px)': {
     display: 'none',
   },
 })
