@@ -12,11 +12,7 @@ export const ExperienceItem: FC<Props> = ({ job }) => {
       </JobHeader>
       <CompanyDetails>{job.company}</CompanyDetails>
       <JobDescription>{job.description}</JobDescription>
-      <PillsContainer>
-        {job.skills.map((skill, index) => (
-          <Pill key={index}>{skill}</Pill>
-        ))}
-      </PillsContainer>
+      <PillsContainer>{job.skills?.map((skill, index) => <Pill key={index}>{skill}</Pill>)}</PillsContainer>
     </ExperienceListItem>
   )
 }

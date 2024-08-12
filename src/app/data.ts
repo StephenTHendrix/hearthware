@@ -14,29 +14,56 @@ export const experienceData = [
     company: 'VShift',
     date: 'June 2023 - Present',
     description: `Architect and develop web solutions, focusing on seamless integration with content 
-    management systems and headless platforms. Optimize website performance and collaborate with Fortune 
-    100 clients and cross-functional teams to deliver projects from concept to market.`,
+    management systems and headless platforms. Optimize website performance and collaborate with 
+    Fortune 100 clients and cross-functional teams to deliver projects from concept to market.`,
     skills: ['TypeScript', 'Next', 'React', 'Node', 'GraphQL', 'Drupal', 'Contentful', 'AEM'],
   },
   {
     title: 'Software Engineer',
     company: 'iHeartMedia',
     date: 'February 2021 - June 2023',
-    description: `Lead technical planning and collaborate with teams to translate product requirements into 
-    engineering tasks. Build and maintain full-stack features, mentor junior engineers, and optimize database 
-    performance. Develop reusable components and implement state management to enhance application performance.`,
+    description: `Led technical planning and collaborated with teams to translate product requirements 
+    into engineering tasks. Built and maintained full-stack features, mentored junior engineers, and 
+    optimized database performance. Developed reusable components and implemented state management 
+    to enhance application performance.`,
     skills: ['TypeScript', 'React', 'Node', 'GraphQL', 'PostgreSQL', 'Python', 'AWS'],
   },
   {
     title: 'Lead Software Engineer',
     company: 'Cake',
     date: 'March 2020 - March 2021',
-    description: `Design and build full-stack web applications to improve user experience and operational efficiency, 
-    resulting in significant reductions in customer support time. Implement cost-effective solutions and work closely 
-    with leadership in a fast-paced startup environment to iterate on features and manage all aspects of development 
-    and deployment.`,
+    description: `Designed and built full-stack web applications to improve user experience and 
+    operational efficiency, resulting in significant reductions in customer support time. Implemented 
+    cost-effective solutions and worked closely with leadership in a fast-paced startup environment 
+    to iterate on features and manage all aspects of development and deployment.`,
     skills: ['React', 'Node', 'Express', 'MySQL'],
   },
+  // {
+  //   title: '4th/5th Grade Teacher',
+  //   company: 'Tom Field Elementary',
+  //   date: 'July 2018 - July 2019',
+  //   description: `Led engaging lessons across all core subjects, fostering a love for learning and
+  //   boosting academic performance by 15%. Collaborated with fellow educators to implement school-wide
+  //   initiatives and improvements. Encouraged students to explore coding and problem-solving skills,
+  //   earning recognition for Social-Emotional Learning practices.`,
+  // },
+  // {
+  //   title: 'Honors Geometry / History Teacher',
+  //   company: 'Chandler Preparatory Academy',
+  //   date: 'July 2016 - July 2018',
+  //   description: `Developed dynamic lesson plans for Honors Geometry and History, leading students to
+  //   achieve top standardized test scores within a network of 11 schools. Played a key role in curriculum
+  //   development and provided motivational support to students writing and defending theses.`,
+  // },
+  // {
+  //   title: 'Tutor',
+  //   company: 'Breakthrough Collaborative',
+  //   date: 'January 2014 - May 2015',
+  //   description: `Provided personalized instruction in SAT, AP exams, and various subjects, with a focus on
+  //   helping underserved students become the first in their families to attend college. Mentored students
+  //   from diverse backgrounds, guiding them to a 20% average increase in test scores, and inspiring a strong
+  //   commitment to academic achievement and college readiness.`,
+  // }
 ]
 
 export const projectData = [

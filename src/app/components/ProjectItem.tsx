@@ -6,7 +6,7 @@ import { brandWhite, brandYellow } from '../constants/styles'
 import { ArrowUpRight } from '../svg/ArrowUpRight'
 
 export const ProjectItem: FC<Props> = ({ project }) => {
-  const clickable = !!project.url;
+  const clickable = !!project.url
 
   const Content = (
     <ProjectListItem clickable={clickable}>
@@ -19,15 +19,15 @@ export const ProjectItem: FC<Props> = ({ project }) => {
         <ProjectDescription>{project.description}</ProjectDescription>
       </ProjectContent>
     </ProjectListItem>
-  );
+  )
 
   return clickable ? (
-    <StyledLink href={project.url!} target="_blank" rel="noopener noreferrer">
+    <StyledLink href={project.url!} target='_blank' rel='noopener noreferrer'>
       {Content}
     </StyledLink>
   ) : (
     Content
-  );
+  )
 }
 
 const ProjectListItem = styled('li', (props: { clickable: boolean }) => ({
@@ -58,15 +58,15 @@ const ProjectListItem = styled('li', (props: { clickable: boolean }) => ({
   '@media (max-width: 768px)': {
     flexDirection: 'column-reverse',
   },
-}));
+}))
 
 const ProjectImage = styled(Image, {
   backgroundColor: brandWhite,
   borderRadius: '8px',
   padding: '5px',
-});
+})
 
-const ProjectContent = styled('div', {});
+const ProjectContent = styled('div', {})
 
 const TitleContainer = styled('div', {
   display: 'flex',
@@ -75,7 +75,7 @@ const TitleContainer = styled('div', {
   '& svg': {
     transition: 'transform 0.2s ease',
   },
-});
+})
 
 const ProjectTitle = styled('span', {
   fontSize: '24px',
@@ -83,17 +83,17 @@ const ProjectTitle = styled('span', {
   lineHeight: 0,
   marginRight: '5px',
   transition: 'color 0.2s ease',
-});
+})
 
 const StyledLink = styled('a', {
   textDecoration: 'none',
   color: brandWhite,
-});
+})
 
 const ProjectDescription = styled('p', {
   fontSize: '16px',
-});
+})
 
 interface Props {
-  project: Project;
+  project: Project
 }

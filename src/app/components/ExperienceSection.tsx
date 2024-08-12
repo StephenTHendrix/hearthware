@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { styled } from 'restyle'
 import { ExperienceItem } from './ExperienceItem'
 import { Experience } from '../interfaces'
-import { brandBlue, brandRed } from '../constants/styles'
+import { brandRed } from '../constants/styles'
 
 export const ExperienceSection: FC<Props> = ({ experienceData }) => (
   <Section>

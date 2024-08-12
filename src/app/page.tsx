@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ExperienceSection } from './components/ExperienceSection'
 import { experienceData, gitHubUrl, linkedInUrl, projectData } from './data'
 import { ProjectSection } from './components/ProjectSection'
-import { brandGreen, brandOrange, brandRed, brandWhite, brandYellow } from './constants/styles'
+import { brandOrange, brandRed, brandWhite } from './constants/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useIntersectionObserver } from './hooks/useIntersectionObserver'
@@ -76,10 +76,17 @@ export default function Page() {
               <br />
               <br />
               I’ve worked as the sole developer at a successful startup, an SME of high-level enterprise features and
-              mentor to junior developers at iHeartMedia, and a senior engineer at the agency VShift, working
-              cross-functionally with design and product teams to build custom greenfield solutions for our Fortune 100
-              clients. I find it deeply satisfying to understand the entirety of a feature or application that traverses
-              the full stack, including TypeScript, Next, React, GraphQL, Node, PostgreSQL, and AWS.
+              mentor to junior developers at iHeartMedia, and as a senior engineer at VShift, a digital agency,
+              collaborating cross-functionally with design and product teams to build custom solutions for Fortune 100
+              clients.
+              <br />
+              <br />
+              Even in my free time, I'm solving community-oriented puzzles, whether that means rock climbing, playing
+              board games, or watching groups of friends play Dungeons & Dragons. My passion for connecting with others
+              through shared complex interests is even what led me to study philosophy at a small discussion-based
+              college, and why I became a teacher after graduating. I love being a software engineer, and I’m eager to
+              use my problem-solving skills to create meaningful solutions that help make the world a better and more
+              welcoming place.
             </AboutSection>
           </div>
           <div id='experience' ref={experienceRef}>

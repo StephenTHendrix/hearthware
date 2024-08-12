@@ -3,7 +3,7 @@ export interface Experience {
   company: string
   date: string
   description: string
-  skills: string[]
+  skills?: string[]
 }
 
 export interface Project {
