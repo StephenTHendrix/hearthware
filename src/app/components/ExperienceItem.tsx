@@ -21,9 +21,12 @@ const ExperienceListItem = styled('li', {
   borderRadius: '8px',
   transition: 'background-color 0.3s ease, transform 0.2s ease',
   cursor: 'default',
+  margin: '0 -20px',
 
-  '&:hover': {
-    backgroundColor: '#f5f5f51a',
+  '@media (hover: hover) and (pointer: fine)': {
+    '&:hover': {
+      backgroundColor: '#f5f5f51a',
+    },
   },
 })
 
