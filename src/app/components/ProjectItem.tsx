@@ -83,6 +83,8 @@ const ProjectTitle = styled('span', {
   lineHeight: 0,
   marginRight: '5px',
   transition: 'color 0.2s ease',
+  wordWrap: 'break-word',
+  whiteSpace: 'normal',
 })
 
 const StyledLink = styled('a', {
