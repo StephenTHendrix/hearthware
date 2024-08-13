@@ -47,6 +47,7 @@ const JobTitle = styled('h3', {
 const JobDate = styled('span', {
   fontSize: '16px',
   color: '#888',
+  marginLeft: '5px',
 })
 
 const CompanyDetails = styled('p', {

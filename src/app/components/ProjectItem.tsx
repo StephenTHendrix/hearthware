@@ -80,11 +80,11 @@ const TitleContainer = styled('div', {
 const ProjectTitle = styled('span', {
   fontSize: '24px',
   fontWeight: '500',
-  lineHeight: 0,
+  lineHeight: 1.2,
   marginRight: '5px',
   transition: 'color 0.2s ease',
   wordWrap: 'break-word',
-  whiteSpace: 'normal',
+  whiteSpace: 'normal',  
 })
 
 const StyledLink = styled('a', {
