@@ -1,4 +1,4 @@
-import { brandGray } from "../constants/styles"
+import { brandGray } from '../constants/styles'
 
 export const ArrowUpRight = ({ fill = brandGray, height = '24px' }) => {
   return (
