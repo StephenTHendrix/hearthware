@@ -2,7 +2,7 @@ import { styled } from 'restyle'
 import { FC } from 'react'
 import Image from 'next/image'
 import { Project } from '../interfaces'
-import { brandWhite, brandYellow } from '../constants/styles'
+import { brandBlue, brandWhite, brandYellow } from '../constants/styles'
 import { ArrowUpRight } from '../svg/ArrowUpRight'
 
 export const ProjectItem: FC<Props> = ({ project }) => {
@@ -13,10 +13,12 @@ export const ProjectItem: FC<Props> = ({ project }) => {
       <ProjectImage src={project.image} alt={project.title} height={75} width={150} />
       <ProjectContent>
         <TitleContainer>
-          <ProjectTitle>{project.title}</ProjectTitle>
+          {/* TODO: achieve hover effect without className*/}
+          <ProjectTitle className='project-title'>{project.title}</ProjectTitle>
           <ArrowUpRight fill={brandWhite} />
         </TitleContainer>
         <ProjectDescription>{project.description}</ProjectDescription>
+        <PillsContainer>{project.skills?.map((skill, index) => <Pill key={index}>{skill}</Pill>)}</PillsContainer>
       </ProjectContent>
     </ProjectListItem>
   )
@@ -49,7 +51,7 @@ const ProjectListItem = styled('li', (props: { clickable: boolean }) => ({
         transform: 'translate(5px, -5px)',
         fill: brandYellow,
       },
-      '&:hover span': {
+      '&:hover .project-title': {
         color: brandYellow,
       },
     }),
@@ -64,6 +66,10 @@ const ProjectImage = styled(Image, {
   backgroundColor: brandWhite,
   borderRadius: '8px',
   padding: '5px',
+  width: '100%',
+  height: '75px',
+  maxWidth: '120px',
+  objectFit: 'contain',
 })
 
 const ProjectContent = styled('div', {})
@@ -94,6 +100,23 @@ const StyledLink = styled('a', {
 
 const ProjectDescription = styled('p', {
   fontSize: '16px',
+})
+
+const PillsContainer = styled('div', {
+  display: 'flex',
+  flexWrap: 'wrap',
+  marginTop: '10px',
+})
+
+const Pill = styled('span', {
+  display: 'inline-block',
+  padding: '5px 10px',
+  margin: '5px 5px 0 0',
+  borderRadius: '20px',
+  backgroundColor: brandWhite,
+  color: brandBlue,
+  fontSize: '14px',
+  fontWeight: '500',
 })
 
 interface Props {

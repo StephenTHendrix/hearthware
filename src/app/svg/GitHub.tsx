@@ -1,4 +1,6 @@
-export const GitHub = ({ fill = '#888', height = '24px' }) => {
+import { brandGray } from "../constants/styles"
+
+export const GitHub = ({ fill = brandGray, height = '24px' }) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' height={height} fill={fill} aria-hidden='true'>
       <path

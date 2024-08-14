@@ -23,7 +23,7 @@ const SectionTitle = styled('h2', {
   fontSize: '32px',
   fontWeight: '600',
   margin: '20px 0',
-  borderBottom: `1px solid ${brandRed}`,
+  borderBottom: `2px solid ${brandRed}`,
 })
 
 const ExperienceList = styled('ul', {

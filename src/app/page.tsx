@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react'
 import { ExperienceSection } from './components/ExperienceSection'
 import { experienceData, gitHubUrl, linkedInUrl, projectData } from './data'
 import { ProjectSection } from './components/ProjectSection'
-import { brandOrange, brandRed, brandWhite } from './constants/styles'
+import { brandGray, brandOrange, brandRed, brandWhite, brandYellow } from './constants/styles'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useIntersectionObserver } from './hooks/useIntersectionObserver'
@@ -41,8 +41,7 @@ export default function Page() {
           <IntroTitle>Hi! I'm Stephen.</IntroTitle>
           <IntroDescription>
             I want to make <HearthwareText>Hearthware</HearthwareText> - a term for software crafted by a close-knit,
-            collaborative team designed to promote social progress, improve lives, and make room at the table for
-            underserved populations.
+            collaborative team designed to meaningfully improve the world.
           </IntroDescription>
 
           <Nav>
@@ -70,18 +69,32 @@ export default function Page() {
           <div id='about' ref={aboutRef}>
             <AboutTitle>About</AboutTitle>
             <AboutSection>
-              I made Hearthware.org to serve as an aspirational portfolio - I don’t have working side projects to demo,
-              but I do have five years of experience as a software engineer, seven years of experience as an educator,
-              and a deep desire to work hard on projects I believe in.
+              Hearthware.org is a work in progress, started after I found myself seeking a deeper sense of fulfillment
+              in my work. I became a software engineer five years ago because I love solving novel problems with small,
+              dedicated teams. While that hasn't changed at all, now I find myself wanting to feel more connected to and
+              invested in the software I build, which could look like anything from creating tools for direct
+              humanitarian aid or developing innovative solutions that modernize industries and improve lives.
               <br />
               <br />
-              I’ve worked as the sole developer at a successful startup, an SME of high-level enterprise features and
-              mentor to junior developers at iHeartMedia, and as a senior engineer at VShift, a digital agency,
-              collaborating cross-functionally with design and product teams to build custom solutions for Fortune 100
-              clients.
+              Throughout my career, I've focused on transforming vague problems into fully fleshed-out solutions,
+              designing greenfield projects from the ground up, and collaborating with cross-functional teams in a
+              variety of environments: a small startup that eventually got
+              <StyledLink href='https://transactly.com' target='_blank' rel='noopener noreferrer'>
+                &nbsp;acquired
+              </StyledLink>
+              , America’s #1 audio
+              <StyledLink href='https://www.iheartmedia.com/' target='_blank' rel='noopener noreferrer'>
+                &nbsp;company
+              </StyledLink>
+              , and a mid-sized digital
+              <StyledLink href='https://www.vshift.com/' target='_blank' rel='noopener noreferrer'>
+                &nbsp;agency&nbsp;
+              </StyledLink>
+              for enterprise-scale brands in regulated industries. I love the feeling of digging into a difficult
+              problem in order to ask good questions that create clarity out of confusion.
               <br />
               <br />
-              Even in my free time, I'm solving community-oriented puzzles, whether that means rock climbing, playing
+              Even in my free time I'm solving community-oriented puzzles, whether that means rock climbing, playing
               board games, or watching groups of friends play Dungeons & Dragons. My passion for connecting with others
               through shared complex interests is even what led me to study philosophy at a small discussion-based
               college, and why I became a teacher after graduating. I love being a software engineer, and I’m eager to
@@ -97,12 +110,16 @@ export default function Page() {
             <ProjectSection projectData={projectData} />
           </div>
         </Column>
+        <Attribution href='https://brittanychiang.com' target='_blank' rel='noopener noreferrer'>
+          Design inspired by Brittany Chiang
+        </Attribution>
       </PageContainer>
     </>
   )
 }
 
 const PageContainer = styled('div', {
+  position: 'relative',
   display: 'flex',
   flexDirection: 'row',
   padding: '70px 40px',
@@ -179,7 +196,7 @@ const NavItem = styled(Link, {
   fontSize: '18px',
   fontWeight: '500',
   textDecoration: 'none',
-  color: '#888',
+  color: brandGray,
   transition: 'text-shadow 0.3s ease-in-out, color 0.3s ease-in-out',
   padding: '5px 0',
 
@@ -218,7 +235,7 @@ const AboutTitle = styled('h2', {
   fontSize: '32px',
   fontWeight: '600',
   margin: '20px 0',
-  borderBottom: `1px solid ${brandRed}`,
+  borderBottom: `2px solid ${brandRed}`,
 
   '@media screen and (min-width: 1025px)': {
     display: 'none',
@@ -231,4 +248,23 @@ const AboutSection = styled('p', {
   '@media screen and (max-width: 1024px)': {
     fontSize: '16px',
   },
+})
+
+const StyledLink = styled('a', {
+  color: brandOrange,
+  textDecoration: 'none',
+  transition: 'color 0.3s ease-in-out',
+
+  '&:hover': {
+    color: brandYellow,
+  },
+})
+
+const Attribution = styled('a', {
+  position: 'absolute',
+  bottom: '10px',
+  right: '10px',
+  fontSize: '10px',
+  color: brandGray,
+  textDecoration: 'none',
 })

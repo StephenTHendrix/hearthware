@@ -1,4 +1,6 @@
-export const LinkedIn = ({ fill = '#888', height = '24px' }) => {
+import { brandGray } from "../constants/styles"
+
+export const LinkedIn = ({ fill = brandGray, height = '24px' }) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height={height} fill={fill} aria-hidden='true'>
       <path

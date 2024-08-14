@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { styled } from 'restyle'
 import { Experience } from '../interfaces'
-import { brandBlue, brandWhite } from '../constants/styles'
+import { brandBlue, brandGray, brandWhite } from '../constants/styles'
 
 export const ExperienceItem: FC<Props> = ({ job }) => {
   return (
@@ -46,13 +46,13 @@ const JobTitle = styled('h3', {
 
 const JobDate = styled('span', {
   fontSize: '16px',
-  color: '#888',
+  color: brandGray,
   marginLeft: '5px',
 })
 
 const CompanyDetails = styled('p', {
   fontSize: '18px',
-  color: '#888',
+  color: brandGray,
   margin: '0 0 5px 0',
 })
 

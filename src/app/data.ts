@@ -70,10 +70,25 @@ export const projectData = [
   {
     title: 'Netlify Connect AEM Integration',
     image: '/netlify-aem.jpeg',
-    description: `Integrate AEM content and experience fragments as a data source to unify all of your content sources
-    and make it easier to modernize your web architecture. The Adobe Experience Manager (AEM) Connector ensures that
-    AEM clients can “go composable” with options including migration to both Adobe and MACH native modern tech stacks.`,
+    description: `
+      An integration between Netlify Connect and Adobe Experience Manager (AEM) 
+      that unifies AEM content and experience fragments with modern web architectures. 
+      This project facilitates a seamless transition to a composable architecture, enabling AEM clients 
+      to leverage both Adobe and MACH-native tech stacks, offering greater flexibility and modernization.`,
+    skills: ['TypeScript', 'Node', 'GraphQL', 'AEM'],
     url: 'https://www.netlify.com/integrations/adobeexperiencemanager',
+  },
+  {
+    title: 'BJC HealthCare',
+    image: '/bjc-logo.svg',
+    description: `
+      The website for Barnes-Jewish Hospital and the BJC HealthCare network, 
+      which has a rich history of serving communities across Missouri and Illinois. 
+      This initiative emphasizes innovation, collaboration, and the promotion of healthier lifestyles. 
+      BJC HealthCare is dedicated to ensuring that advanced care and services are accessible to all, 
+      upholding the belief that everyone deserves extraordinary care.`,
+    skills: ['Next', 'React', 'Bootstrap', 'Node', 'Drupal'],
+    url: 'https://www.bjc.org',
   },
   {
     title: 'LessonPlan.dev',
@@ -81,6 +96,7 @@ export const projectData = [
     description: `An AI-powered lesson planner for teachers, designed to streamline the process of creating, organizing, and
       managing lesson plans. The tool leverages AI to provide suggestions and templates, making it easier for educators
       to develop comprehensive lesson plans quickly.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
   },
   {
     title: 'GiveFurther.org',
@@ -88,6 +104,7 @@ export const projectData = [
     description: `A website that allows users to find charities currently matching donations or scheduled to match donations in the
       future. The platform aims to increase charitable giving by providing transparency and opportunities for donors to
       maximize their impact.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
   },
   {
     title: 'BillBoard.com',
@@ -95,6 +112,7 @@ export const projectData = [
     description: `A website that consolidates congress members' voting records, making their legislative history transparent and
       easily accessible to the public. The site helps users understand their representatives’ positions and track their
       voting patterns over time.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
   },
 ]
 

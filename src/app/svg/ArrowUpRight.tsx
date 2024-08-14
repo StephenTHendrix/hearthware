@@ -1,4 +1,6 @@
-export const ArrowUpRight = ({ fill = '#888', height = '24px' }) => {
+import { brandGray } from "../constants/styles"
+
+export const ArrowUpRight = ({ fill = brandGray, height = '24px' }) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' height={height} viewBox='0 0 20 20' fill={fill} aria-hidden='true'>
       <path
