@@ -110,9 +110,20 @@ export default function Page() {
             <ProjectSection projectData={projectData} />
           </div>
         </Column>
-        <Attribution href='https://brittanychiang.com' target='_blank' rel='noopener noreferrer'>
-          Design inspired by Brittany Chiang
-        </Attribution>
+        <Attributions>
+          <div>
+            Design inspired by&nbsp;
+            <Attribution href='https://brittanychiang.com' target='_blank' rel='noopener noreferrer'>
+              Brittany Chiang
+            </Attribution>
+          </div>
+          <div>
+            Color palette Inspired by my&nbsp;
+            <Attribution href='https://us.scarpa.com/force-v' target='_blank' rel='noopener noreferrer'>
+              climbing shoes
+            </Attribution>
+          </div>
+        </Attributions>
       </PageContainer>
     </>
   )
@@ -260,11 +271,20 @@ const StyledLink = styled('a', {
   },
 })
 
-const Attribution = styled('a', {
+const Attributions = styled('div', {
   position: 'absolute',
   bottom: '10px',
   right: '10px',
   fontSize: '10px',
   color: brandGray,
   textDecoration: 'none',
+})
+
+const Attribution = styled('a', {
+  textDecoration: 'underline',
+  color: 'inherit',
+  whiteSpace: 'pre-wrap',
+  '&:visited': {
+    color: 'inherit',
+  },
 })

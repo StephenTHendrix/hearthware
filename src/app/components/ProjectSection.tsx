@@ -8,14 +8,8 @@ export const ProjectSection: FC<Props> = ({ projectData }) => (
   <Section>
     <SectionTitle>Projects</SectionTitle>
     <ProjectList>
-      {projectData.map((project, index) => (
-        <>
-          <ProjectItem key={index} project={project} />
-          {index === 1 && (
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
-            <AdditionalText>// TODO: Develop these projects</AdditionalText>
-          )}
-        </>
+      {projectData.map(project => (
+        <ProjectItem key={project.title} project={project} />
       ))}
     </ProjectList>
   </Section>

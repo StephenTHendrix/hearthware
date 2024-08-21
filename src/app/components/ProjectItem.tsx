@@ -15,7 +15,7 @@ export const ProjectItem: FC<Props> = ({ project }) => {
         <TitleContainer>
           {/* TODO: achieve hover effect without className*/}
           <ProjectTitle className='project-title'>{project.title}</ProjectTitle>
-          <ArrowUpRight fill={brandWhite} />
+          {clickable && <ArrowUpRight fill={brandWhite} />}
         </TitleContainer>
         <ProjectDescription>{project.description}</ProjectDescription>
         <PillsContainer>{project.skills?.map((skill, index) => <Pill key={index}>{skill}</Pill>)}</PillsContainer>

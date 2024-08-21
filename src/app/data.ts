@@ -68,6 +68,30 @@ export const experienceData = [
 
 export const projectData = [
   {
+    title: 'LessonPlan.dev',
+    image: '/todo.svg',
+    description: `An AI-powered lesson planner for teachers, designed to streamline the process of creating, organizing, and
+      managing lesson plans. The tool leverages AI to provide suggestions and templates, making it easier for educators
+      to develop comprehensive lesson plans quickly.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+  },
+  {
+    title: 'GiveFurther.org',
+    image: '/todo.svg',
+    description: `A website that allows users to find charities currently matching donations or scheduled to match donations in the
+      future. The platform aims to increase charitable giving by providing transparency and opportunities for donors to
+      maximize their impact.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+  },
+  {
+    title: 'BillBoard.com',
+    image: '/todo.svg',
+    description: `A website that consolidates congress members' voting records, making their legislative history transparent and
+      easily accessible to the public. The site helps users understand their representatives’ positions and track their
+      voting patterns over time.`,
+    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+  },
+  {
     title: 'Netlify Connect AEM Integration',
     image: '/netlify-aem.jpeg',
     description: `
@@ -89,30 +113,6 @@ export const projectData = [
       upholding the belief that everyone deserves extraordinary care.`,
     skills: ['Next', 'React', 'Bootstrap', 'Node', 'Drupal'],
     url: 'https://www.bjc.org',
-  },
-  {
-    title: 'LessonPlan.dev',
-    image: '/blocks.svg',
-    description: `An AI-powered lesson planner for teachers, designed to streamline the process of creating, organizing, and
-      managing lesson plans. The tool leverages AI to provide suggestions and templates, making it easier for educators
-      to develop comprehensive lesson plans quickly.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
-  },
-  {
-    title: 'GiveFurther.org',
-    image: '/blocks.svg',
-    description: `A website that allows users to find charities currently matching donations or scheduled to match donations in the
-      future. The platform aims to increase charitable giving by providing transparency and opportunities for donors to
-      maximize their impact.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
-  },
-  {
-    title: 'BillBoard.com',
-    image: '/blocks.svg',
-    description: `A website that consolidates congress members' voting records, making their legislative history transparent and
-      easily accessible to the public. The site helps users understand their representatives’ positions and track their
-      voting patterns over time.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
   },
 ]
 
