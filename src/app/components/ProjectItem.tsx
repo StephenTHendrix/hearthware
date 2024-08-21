@@ -2,7 +2,7 @@ import { styled } from 'restyle'
 import { FC } from 'react'
 import Image from 'next/image'
 import { Project } from '../interfaces'
-import { brandBlue, brandWhite, brandYellow } from '../constants/styles'
+import { brandBlue, brandLighterBlue, brandWhite } from '../constants/styles'
 import { ArrowUpRight } from '../svg/ArrowUpRight'
 
 export const ProjectItem: FC<Props> = ({ project }) => {
@@ -49,10 +49,10 @@ const ProjectListItem = styled('li', (props: { clickable: boolean }) => ({
     ...(props.clickable && {
       '&:hover svg': {
         transform: 'translate(5px, -5px)',
-        fill: brandYellow,
+        fill: brandLighterBlue,
       },
       '&:hover .project-title': {
-        color: brandYellow,
+        color: brandLighterBlue,
       },
     }),
   },

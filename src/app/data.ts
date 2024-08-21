@@ -38,32 +38,32 @@ export const experienceData = [
     to iterate on features and manage all aspects of development and deployment.`,
     skills: ['React', 'Node', 'Express', 'MySQL'],
   },
-  // {
-  //   title: '4th/5th Grade Teacher',
-  //   company: 'Tom Field Elementary',
-  //   date: 'July 2018 - July 2019',
-  //   description: `Led engaging lessons across all core subjects, fostering a love for learning and
-  //   boosting academic performance by 15%. Collaborated with fellow educators to implement school-wide
-  //   initiatives and improvements. Encouraged students to explore coding and problem-solving skills,
-  //   earning recognition for Social-Emotional Learning practices.`,
-  // },
-  // {
-  //   title: 'Honors Geometry / History Teacher',
-  //   company: 'Chandler Preparatory Academy',
-  //   date: 'July 2016 - July 2018',
-  //   description: `Developed dynamic lesson plans for Honors Geometry and History, leading students to
-  //   achieve top standardized test scores within a network of 11 schools. Played a key role in curriculum
-  //   development and provided motivational support to students writing and defending theses.`,
-  // },
-  // {
-  //   title: 'Tutor',
-  //   company: 'Breakthrough Collaborative',
-  //   date: 'January 2014 - May 2015',
-  //   description: `Provided personalized instruction in SAT, AP exams, and various subjects, with a focus on
-  //   helping underserved students become the first in their families to attend college. Mentored students
-  //   from diverse backgrounds, guiding them to a 20% average increase in test scores, and inspiring a strong
-  //   commitment to academic achievement and college readiness.`,
-  // }
+  {
+    title: '4th/5th Grade Teacher',
+    company: 'Tom Field Elementary',
+    date: 'July 2018 - July 2019',
+    description: `Led engaging lessons across all core subjects, fostering a love for learning and
+    boosting academic performance by 15%. Collaborated with fellow educators to implement school-wide
+    initiatives and improvements. Encouraged students to explore coding and problem-solving skills,
+    earning recognition for Social-Emotional Learning practices.`,
+  },
+  {
+    title: 'Honors Geometry / History Teacher',
+    company: 'Chandler Preparatory Academy',
+    date: 'July 2016 - July 2018',
+    description: `Developed dynamic lesson plans for Honors Geometry and History, leading students to
+    achieve top standardized test scores within a network of 11 schools. Played a key role in curriculum
+    development and provided motivational support to students writing and defending theses.`,
+  },
+  {
+    title: 'Tutor',
+    company: 'Breakthrough Collaborative',
+    date: 'January 2014 - May 2015',
+    description: `Provided personalized instruction in SAT, AP exams, and various subjects, with a focus on
+    helping underserved students become the first in their families to attend college. Mentored students
+    from diverse backgrounds, guiding them to a 20% average increase in test scores, and inspiring a strong
+    commitment to academic achievement and college readiness.`,
+  },
 ]
 
 export const projectData = [
