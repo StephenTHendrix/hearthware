@@ -118,9 +118,9 @@ export default function Page() {
             </Attribution>
           </div>
           <div>
-            Color palette Inspired by my&nbsp;
+            Color palette Inspired by&nbsp;
             <Attribution href='https://us.scarpa.com/force-v' target='_blank' rel='noopener noreferrer'>
-              climbing shoes
+              my climbing shoes
             </Attribution>
           </div>
         </Attributions>

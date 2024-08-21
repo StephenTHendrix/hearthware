@@ -53,7 +53,7 @@ const ExperienceList = styled('ul', {
 })
 
 const AdditionalExperienceList = styled(ExperienceList, (props: { showAll: boolean }) => ({
-  maxHeight: props.showAll ? '1000px' : '0',
+  maxHeight: props.showAll ? 'auto' : '0',
   opacity: props.showAll ? 1 : 0,
   overflow: props.showAll ? 'visible' : 'hidden',
   transition: 'max-height 0.5s ease, opacity 0.5s ease',
