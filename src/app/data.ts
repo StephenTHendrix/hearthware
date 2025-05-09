@@ -10,13 +10,21 @@ export const aboutData = `
 
 export const experienceData = [
   {
+    title: 'Senior Back-End Engineer (Contract)',
+    company: 'Capital Group',
+    date: 'December 2024 - Present',
+    description: `Lead back-end development and cross-team collaboration to deliver reliable ESG data ingestion and aggregation
+    during a major vendor transition, ensuring uninterrupted internal usage.`,
+    skills: ['TypeScript', 'Node', 'AWS', 'PostgreSQL'],
+  },
+  {
     title: 'Senior Software Engineer',
     company: 'VShift',
-    date: 'June 2023 - Present',
+    date: 'June 2023 - December 2024',
     description: `Architect and develop web solutions, focusing on seamless integration with content 
     management systems and headless platforms. Optimize website performance and collaborate with 
     Fortune 100 clients and cross-functional teams to deliver projects from concept to market.`,
-    skills: ['TypeScript', 'Next', 'React', 'Node', 'GraphQL', 'Drupal', 'Contentful', 'AEM'],
+    skills: ['TypeScript', 'Next', 'React', 'Node', 'GraphQL'],
   },
   {
     title: 'Software Engineer',
