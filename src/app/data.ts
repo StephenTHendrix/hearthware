@@ -76,29 +76,34 @@ export const experienceData = [
 
 export const projectData = [
   {
-    title: 'LessonPlan.dev',
-    image: '/todo.svg',
-    description: `An AI-powered lesson planner for teachers, designed to streamline the process of creating, organizing, and
-      managing lesson plans. The tool leverages AI to provide suggestions and templates, making it easier for educators
-      to develop comprehensive lesson plans quickly.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+    title: 'myAdvo.org',
+    image: '/myAdvo-logo.png',
+    description:
+      'A platform that helps marginalized communities find legal, health, and housing resources. Users can search by topic and location, submit feedback, and contribute new listings. I’ve contributed to roadmap planning, engineering, and admin tooling as a volunteer developer.',
+    skills: ['TypeScript', 'Next', 'React', 'Node', 'MongoDB', 'Prisma', 'AWS'],
   },
   {
-    title: 'GiveFurther.org',
-    image: '/todo.svg',
-    description: `A website that allows users to find charities currently matching donations or scheduled to match donations in the
-      future. The platform aims to increase charitable giving by providing transparency and opportunities for donors to
-      maximize their impact.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+    title: 'StormCOHS',
+    image: '/stormcohs-logo.png',
+    description:
+      'A nonprofit supporting youth ages 13–28 with mentorship, life skills, trauma-informed support, and community. I provided early-stage technical guidance and site feedback as a volunteer.',
+    skills: ['WordPress', 'Roadmapping'],
   },
   {
-    title: 'BillBoard.com',
-    image: '/todo.svg',
-    description: `A website that consolidates congress members' voting records, making their legislative history transparent and
-      easily accessible to the public. The site helps users understand their representatives’ positions and track their
-      voting patterns over time.`,
-    skills: ['TypeScript', 'Next', 'React', 'Restyle', 'Recoil', 'GraphQL', 'PostgreSQL', 'AWS'],
+    title: 'The Catherine Project',
+    image: '/catherine-project-logo.png',
+    description:
+      'A civic education nonprofit offering free online classes in philosophy and literature. I advised on enrollment workflows, CRM systems, and placement logic to support future growth. My role was advisory and short-term.',
+    skills: ['Research', 'Technical advising', 'CRM evaluation'],
   },
+  {
+    title: 'Patchwork Pride',
+    image: '/patchwork-pride-logo.svg',
+    description:
+      'A celebratory microsite exploring the history, symbolism, and design of LGBTQ+ flags. Built from scratch as a personal project combining vivid visuals with educational content.',
+    skills: ['TypeScript', 'Vite', 'React', 'Tailwind'],
+  },
+
   {
     title: 'Netlify Connect AEM Integration',
     image: '/netlify-aem.jpeg',
